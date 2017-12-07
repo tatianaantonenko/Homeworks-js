@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+        table {
+            width: 800px;
+            margin: 0 auto;
+        }
+        tr>td{
+            text-align: center;
+        }
+        button  {
+
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        #new {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+
+<h2 class="center">Homework 3 </h2>
+<hr>
+<table>
+
+    <tr>
+        <th>Key</th>
+        <th>Value</th>
+        <th>Search by index or value </th>
+    </tr>
+    <tr>
+        <td>  <input type="text" name="key" id="input_key" placeholder="key" > </td>
+        <td>  <input type="text" name="value" id="input_value" placeholder="value"> </td>
+        <td> <button id="add_to_arr" onclick="getValByIndexAndVal()">Search</button> </td>
+    </tr>
+    <tr>
+        <th>Удалить из конца</th>
+        <th>Удалить из начала </th>
+        <th>Добавление в любое место массива</th>
+    </tr>
+    <tr>
+        <td>
+            <button id="arr_pop" onClick="arrShiftBtn()">pop</button>
+        </td>
+        <td>
+            <button id="arr_shift" onClick="arrPopBtn()">shift</button>
+        </td>
+        <td>
+            <button id="arr_push_from_input" onclick="arrPushFromInput()">push</button>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2">
+            Добавление в конец массива
+        </th>
+        <td>
+            <button id="push" onclick="addValOnEnd()">push</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1"><b>Result:</b></td>
+        <td colspan="2"><p id="new"></p></td>
+    </tr>
+</table>
+<script src="main.js"></script>
+
+</body>
+</html>

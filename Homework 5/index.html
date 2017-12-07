@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<div>
+	<p>
+		Задание 1. Вычитайте строку из input. Высчитайте ее длину. Выведите результат.
+	</p>
+	<div>
+		<input type="text" name="" id="inputLength">
+		<button onclick="getInputLength()">Вычислить длину</button>
+		<p id="inputLengtOutput"></p>
+	</div>
+</div>
+<hr>
+<div>
+	<p>
+		Создайте массив, который содержит имена изображений в определенной папке. Запустите цикл по массиву и выведите все изображения на страницу. Подсказка, для вывода изображения используйте тег <img src=”xxxx”> где xxx – путь к файлу.
+	</p>
+	<div id="imagesContainer">
+		
+	</div>
+</div>
+<hr>
+<div>
+	<p>
+		Пользователь вводит URL адрес в input в формате http или https. Выведите только имя домена без префиксов http://, https://.
+	</p>
+	<div >
+		<input type="text" name="" id="removePrefix">
+		<button onclick="removePrefix()">Удалить префикс</button>
+	</div>
+</div>
+<div>
+	<p>
+		Пользователь может ввести адрес сайта в формате http://site.ua, https://site.ua, http://www.site.ua, https://www.site.ua или site.ua. Ваша задача используя поиск в подстроке вывести site в виде: site.ua.
+	<div >
+		<input type="text" name="" id="clearOutputSite">
+		<button onclick="clearOutputSite()">Очистить</button>
+	</div>
+</div>
+
+<div>
+	<p>
+		Пользователь заполняет форму состоящую из фамилии, имени пароля и email. Используя приведенные методы выполните обработку формы состоящую из удаления пробелов до и после введённых слов, пароль не должен быть меньше 5 символов, email должен содержать один символ @ и не содержать пробелов. Если форма заполнена корректно, возвращать true.
+	<div >
+		<p id="formError" style="color:red;"></p>
+		<input type="text" name="" placeholder="firstName" id="firstName">
+		<input type="text" name="" placeholder="lastName" id="lastName">
+		<input type="text" name="" placeholder="email" id="email">
+		<input type="password" name="" placeholder="password" id="password">
+		<button onclick="checkForm()">Отправить</button>
+	</div>
+</div>
+<div>
+	<p>
+		
+	<div >
+		<input type="text" id="symbolInput">
+		<button onclick="getSymbolCode()">Получить</button>
+		<p id="symbolOutput"></p>
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+        img {
+            display: inline;
+        }
+        .text-center {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <h2>Homework 4</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-4">
+           <b >Угадайте число, попыток</b> <b id="game_attempt"></b>
+        </div>
+        <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="Введите число" id="guessANumber">
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-secondary" type="button" onclick="guessANumber()">Я угадала?</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="Введите число" id="compute">
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-secondary" type="button" onclick="compute()">Подсчитать</button>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="Введите возраст" id="auth">
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-secondary" type="button" onclick="signIn()">Войти</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="num" id="math_num">
+        </div>
+        <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="pow" id="math_pow">
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-secondary" type="button" onclick="mathPow()">math.pow</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search tag" id="highlightTag">
+                <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button"  onclick="searchTag()">Go!</button>
+            </span>
+            </div>
+        </div>
+        <div class="col-lg-4">
+
+            <div class="input-group">
+                 <span class="input-group-addon">
+                     <span id="incrementStdout">0</span>
+                 </span>
+                <button class="btn btn-secondary" type="button" onclick="incrementBtn()">increment this</button>
+                <button class="btn btn-secondary" type="button" onclick="incrementBtn()">increment this</button>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <button type="button" class="btn btn-info" onclick="toggleHighlightPTag()">toggle highlight <b>P</b> tag</button>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="text-center">
+        <img src="http://lorempixel.com/400/400/" alt="">
+    </div>
+
+    <p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipisicing elit. Aliquam, assumenda consequuntur corporis
+        delectus
+        doloremque dolores eaque eius et eum ipsa iusto maiores molestias natus possimus repellat veniam voluptate
+        voluptates voluptatum. Adipisci amet architecto aspernatur dicta distinctio ducimus illo libero nostrum placeat,
+        praesentium quaerat quo, quod recusandae rem sunt vero voluptatibus.</p>
+    <p>Lorem ipsum dolor <i>sit amet</i>, consectetur adipisicing elit. Aliquam, assumenda consequuntur corporis
+        delectus
+        doloremque dolores eaque eius et eum ipsa iusto maiores molestias natus possimus repellat veniam voluptate
+        voluptates voluptatum. Adipisci amet architecto aspernatur dicta distinctio ducimus illo libero nostrum placeat,
+        praesentium quaerat quo, quod recusandae rem sunt vero voluptatibus.</p>
+
+    <div class="text-center">
+        <img src="http://lorempixel.com/600/400/" alt="">
+    </div>
+
+    <p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipisicing elit. Aliquam, assumenda consequuntur corporis
+        delectus
+        doloremque dolores eaque eius et eum ipsa iusto maiores molestias natus possimus repellat veniam voluptate
+        voluptates voluptatum. Adipisci amet architecto aspernatur dicta distinctio ducimus illo libero nostrum placeat,
+        praesentium quaerat quo, quod recusandae rem sunt vero voluptatibus.</p>
+    <p>Lorem ipsum dolor <i>sit amet</i>, consectetur adipisicing elit. Aliquam, assumenda consequuntur corporis
+        delectus
+        doloremque dolores eaque eius et eum ipsa iusto maiores molestias natus possimus repellat veniam voluptate
+        voluptates voluptatum. Adipisci amet architecto aspernatur dicta distinctio ducimus illo libero nostrum placeat,
+        praesentium quaerat quo, quod recusandae rem sunt vero voluptatibus.</p>
+
+    <div class="text-center">
+        <img src="http://lorempixel.com/350/350/" alt="">
+    </div>
+
+    <p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipisicing elit. Aliquam, assumenda consequuntur corporis
+        delectus
+        doloremque dolores eaque eius et eum ipsa iusto maiores molestias natus possimus repellat veniam voluptate
+        voluptates voluptatum. Adipisci amet architecto aspernatur dicta distinctio ducimus illo libero nostrum placeat,
+        praesentium quaerat quo, quod recusandae rem sunt vero voluptatibus.</p>
+    <p>Lorem ipsum dolor <i>sit amet</i>, consectetur adipisicing elit. Aliquam, assumenda consequuntur corporis
+        delectus
+        doloremque dolores eaque eius et eum ipsa iusto maiores molestias natus possimus repellat veniam voluptate
+        voluptates voluptatum. Adipisci amet architecto aspernatur dicta distinctio ducimus illo libero nostrum placeat,
+        praesentium quaerat quo, quod recusandae rem sunt vero voluptatibus.</p>
+
+
+    <hr/>
+
+
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
