@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #otvet1{ color: red;}
+        #otvet2{ color: red;}
+        #otvet3{ color: red;}
+        #otvet4{ color: red;}
+        #otvet5{ color: red;}
+        #otvet6{ color: red;}
+        #otvet7{ color: red;}
+
+
+        #zadacha1 { margin: 10px 0; }
+        #zadacha2 { margin: 10px 0; }
+        #zadacha3 { margin: 10px 0; }
+        #zadacha4 { margin: 10px 0; }
+        #zadacha5 { margin: 10px 0; }
+        #zadacha6 { margin: 10px 0; }
+        #zadacha7 { margin: 10px 0; }
+    </style>
+</head>
+
+<body>
+
+
+<div id="zadacha1">
+    <button id="otpravitZadacha1">Отправить числа</button>
+    <div id="otvet1"></div>
+</div>
+
+<br>
+
+<div id="zadacha2">
+    <button id="otpravitZadacha2">Отправить год рождения</button>
+    <div id="otvet2"></div>
+</div>
+
+<br>
+
+<div id="zadacha3">
+    <form id="form1" onsubmit="return false">
+        <label for="pol1">
+            Men
+            <input type="radio" name="sex" value='man' id="pol1">
+
+        </label>
+
+        <br>
+
+        <label for="pol2">
+            Women
+            <input type="radio" name="sex"  value='woman' id="pol2">
+        </label>
+        <br>
+
+        <label for="rost">
+            <input type="number" name="height" id="rost">
+        </label>
+
+        <br>
+
+        <button id="otpravitZadacha3">Отправить</button>
+
+    </form>
+</div>
+<div id="otvet3"></div>
+
+
+<div id="zadacha4" onsubmit="return false">
+    <form id="form2">
+        <label for="pol3">
+            Men
+            <input type="radio" name="sex" value='man' id="pol3">
+
+        </label>
+
+        <br>
+
+        <label for="pol4">
+            Women
+            <input type="radio" name="sex"  value='woman' id="pol4">
+        </label>
+        <br>
+
+        <label for="rost2">
+            <input type="range" name="height" id="rost2" max="250" min="150">
+        </label>
+
+        <br>
+
+        <button id="otpravitZadacha4">Отправить</button>
+
+    </form>
+</div>
+<div id="otvet4"></div>
+
+
+//        $to  = 'alexxlu@mail.ru';
+
+<div id="zadacha5">
+    <form id="form3" onsubmit="return false">
+        <label for="fio">
+            ФИО
+            <input type="text" name="fio" id="fio">
+        </label>
+
+        <label for="email">
+            E-Mail
+            <input type="text" name="email" id="email">
+        </label>
+
+
+        <label for="phone">
+            Phone
+            <input type="text" name="phone" id="phone">
+        </label>
+
+        <button id="otpravitZadacha5">Отправить письмо</button>
+    </form>
+</div>
+<div id="otvet5"></div>
+
+
+<div id="zadacha6">
+    <button id="otpravitGood1">получить товар </button>
+    <div id="otvet6"></div>
+</div>
+
+
+<div id="zadacha7">
+    <button id="otpravitGood2">получить товар </button>
+    <div id="otvet7"></div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src="2.js"></script>
+
+</body>
+</html>
