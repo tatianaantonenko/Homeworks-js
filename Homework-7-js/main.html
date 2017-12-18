@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="title">
+    <meta name="description" content="content">
+    <meta name="keywords" content="">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="zadacha1">
+
+        <div id="inputs">
+
+        </div>
+
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+
+        <br>
+
+        <input type="radio" name="tip_sbora" value="2"> Четный
+        <input type="radio" name="tip_sbora" value="0"> Нечетные
+        <input type="radio" name="tip_sbora" value="1"> Все
+
+        <br>
+        <hr>
+        <button id="sobrat">Собрать</button>
+        <button id="ubrat">-</button>
+        <button id="dobavit">+</button>
+
+
+    </div>
+
+
+    <div id="zadacha2">
+        <hr>
+        <div>
+            <i>Вы выбрали опцию:</i>
+            <b id="vibrannaya_opcia">
+
+            </b>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+            Выбрать опцию
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Выбрать опцию</h5>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="opcia_1">Опция 1</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="opcia_2">Опция 2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="zadacha_3">
+        <div class="spisok">
+            <p class="element">Текст эллемента</p>
+            <p class="element">Текст эллемента</p>
+            <p class="element">Текст эллемента</p>
+        </div>
+    </div>
+    <input type="text" id="dobavit_element">
+    <button id="dovit_v_spisok">Добавить</button>
+
+    <br>
+    <br>
+    <br>
+    <div id="zadacha_4">
+
+        <div class="elements">
+
+            <div class="content">
+                <img class="christmas img1" src="https://s3-media2.fl.yelpcdn.com/bphoto/OfymV8AwriQ172ywoEK8Iw/ls.jpg"
+                     alt="">
+                <div class="text "> Lorem ipsum dolor sit amet.</div>
+            </div>
+
+            <div class="content">
+                <img class="christmas img2"
+                     src="https://s.shld.net/is/image/Sears/Kmart_stockings-qm-$cq_width_250$-amp--amp-qlt-eq-90,0-amp-resMode-eq-sharp-amp-op_usm-eq-0.9,0.5,0,0,-amp-jpegSize-eq-100-amp-bgc-eq-ffffff"
+                     alt="">
+                <div class="text "> Lorem ipsum dolor sit amet.</div>
+            </div>
+
+            <div class="content">
+                <img class="christmas img3"
+                     src="https://www.spotlightstores.com/medias/christmas-bauble-artwork-project-landing-tile-splau-desktop.jpg?context=bWFzdGVyfHJvb3R8MjU2MzV8aW1hZ2UvanBlZ3xyb290L2gwYi9oNDEvOTU3MDg3MzI3ODQ5NC9jaHJpc3RtYXMtYmF1YmxlLWFydHdvcmstcHJvamVjdC1sYW5kaW5nLXRpbGUtc3BsYXUtZGVza3RvcC5qcGd8N2YzNjk2YjgwNTk0YWU4ZTg3ZjA3M2JjZjg5NTYxNGM1MDk0NjgzZDRjNWUyYTRmNGM4YzEyMjg3ZTVjMDQ2Zg"
+                     alt="">
+                <div class="text "> Lorem ipsum dolor sit amet.</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div id="zadacha7">
+    <ol>
+        <li>
+            <a href="https://google.com" class="link" target="_blank" title="гугл"> google </a>
+        </li>
+        <li>
+            <a href="https://yandex.com" class="link" target="_blank" title="яндекс"> yandex </a>
+        </li>
+        <li>
+            <a href="https://rambler.com" class="link"> rambler </a>
+        </li>
+        <li>
+            <img
+                    src="https://s3-media2.fl.yelpcdn.com/bphoto/OfymV8AwriQ172ywoEK8Iw/ls.jpg"
+                    alt="Описание"
+                    class="img_link"
+            >
+        </li>
+        <li>
+            <img
+                    src="https://s.shld.net/is/image/Sears/Kmart_stockings-qm-$cq_width_250$-amp--amp-qlt-eq-90,0-amp-resMode-eq-sharp-amp-op_usm-eq-0.9,0.5,0,0,-amp-jpegSize-eq-100-amp-bgc-eq-ffffff"
+                    class="img_link"
+            >
+        </li>
+    </ol>
+</div>
+<div class="show_link"></div>
+
+<div id="zadacha_9">
+    <h1 class="heading">Lorem ipsum dolor sit amet.</h1>
+    <h2 class="heading">Lorem ipsum dolor sit amet.</h2>
+    <h3 class="heading">Lorem ipsum dolor sit amet.</h3>
+    <h4 class="heading">Lorem ipsum dolor sit amet.</h4>
+    <h6 class="heading">Lorem ipsum dolor sit amet.</h6>
+
+    <div class="count" style="color: blue;"></div>
+    <b class="count_error" style="color: red;"></b>
+</div>
+<br>
+<br>
+<br>
+<div id="zadacha_10">
+
+    <div class="count" style="color: blue;"></div>
+    <b class="count_error" style="color: red;"></b>
+
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+<script src="./main.js"></script>
+</body>
+</html>

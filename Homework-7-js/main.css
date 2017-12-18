@@ -1,0 +1,57 @@
+#zadacha1 input {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .error_style {
+            border: 1px solid red;
+        }
+        .error_style_img {
+            border: 5px solid red;
+        }
+
+        .elements .content {
+            width: 550px;
+            height: 250px;
+        }
+
+        .elements .content .christmas {
+            float: left;
+        }
+
+        .elements .content .text {
+            /*position: absolute;*/
+            /*right: -250px;*/
+            /*top: 0;*/
+            float: left;
+            display: none;
+            height: 250px;
+            width: 250px;
+            background-color: #000;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .elements .content .text.hide {
+            /*display: none;*/
+        }
+
+        .elements .content .text.show {
+            /*display: none;*/
+        }
+
+        .show_link {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: auto;
+            height: 50px;
+            background: #000;
+            color: #ffffff;
+            font-size: 14px;
+        }
